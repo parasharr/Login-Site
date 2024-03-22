@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo{
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.1em;
+  color:#fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+.navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+  width: 100px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+  background: #fff;
+  color: #030321bf;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("1004017.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  box-shadow: black;
+  
+}
+
+.form-box{
+  position: relative;
+  width: 400px;
+  height: 550px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.212);
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  backdrop-filter: blur(50px);
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: rgba(249, 249, 249, 0.738);
+  position: relative;
+
+}
+.form-box h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background:rgba(249, 248, 254, 0.826);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-field{
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+
+}
+
+.input-field i{
+  margin-left: 15px;
+  color: #999;
+}
+
+form p{
+  text-align: left;
+  font-size: 15px;
+}
+
+form p a{
+  text-decoration: none;
+  color:#ffffffd3;
+}
+
+form p a:hover{
+  text-decoration: underline;
+}
+
+form
+.btn{
+  width: 50%;
+  height: 40px;
+  background: #555;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  transform-origin: left;
+  transition: .5s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color:rgba(7, 3, 38, 0.826);
+}
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 10px;
+}
+
+.btn-field button{
+  flex-basis: 48%;
+  background: #99999987;
+  color:rgba(7, 3, 38, 0.826);
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.input-group{
+  height: 280px;
+}
+
+.btn-field button.disable{
+  background: #eaeaea;
+  color: #555;
+}
+
+.container .icon-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  font-size: 1.8em;
+  color: #170101da;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (max-width:768px){
+  header{
+    padding: 15px 50px;
+  }
+  .navigation a,
+  .navigation .btnLogin-popup{
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+  .form-box{
+    width: 90%;
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 480px){
+  header{
+    padding: 10px 20px;
+  }
+  .navigation a{
+    font-size: 0.8em;
+    margin: 0 10px;
+  }
+  .navigation .btnLogin-popup{
+    width: 80px;
+    height: 30px;
+    font-size: 1em;
+  }
+  .form-box{
+    width: 95%;
+    padding: 30px 20px;
+  }
+}
