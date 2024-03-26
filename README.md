@@ -22,12 +22,15 @@ Getting Started
 i) Clone the repository: 'git clone https://github.com/PranjeetGoswami/Codes
 
 ii) Open the project directory in your code editor.
+
 iii) Open the 'index.html' file in your web browser.
 
 Usage
 
 i) Navigate to the 'index.html' file in your web browser.
+
 ii) Use the provided forms to register a new account or login in the existing credentials.
+
 iii) Follow the on-screen instructions and prompts for successful registration or login.
 
 Acknowledgments
