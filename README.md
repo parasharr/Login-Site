@@ -12,8 +12,10 @@ iv) Responsive Design: The form are designed to be responsive and accessible acr
 Technologies Used
 
 i) HTML: For structuring the web pages.
+
 ii) CSS: For styling the user interface.
-ii) JavaScript: For client-side validation and interaction.
+
+iii) JavaScript: For client-side validation and interaction.
 
 Getting Started
 
