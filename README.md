@@ -18,6 +18,7 @@ ii) JavaScript: For client-side validation and interaction.
 Getting Started
 
 i) Clone the repository: 'git clone https://github.com/PranjeetGoswami/Codes
+
 ii) Open the project directory in your code editor.
 iii) Open the 'index.html' file in your web browser.
 
