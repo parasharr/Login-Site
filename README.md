@@ -2,6 +2,9 @@
 
 This project is a simple web page featuring a login and registration form.It is designed to demonstrate basic user authentication functionalities using HTML,CSS & JavaScript.
 
+## Project Preview
+**URL**: https://loginsitebyp.netlify.app/
+
 ## Features
 - **User Registration**: Users can create a new account by providing a username,email address & password.
 - **User login**: Registered users can log in using their username/email and password.
